@@ -20,6 +20,17 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
+    "1.66.0"
+    URL
+    "${_hunter_boost_base_url}/1.66.0/source/boost_1_66_0.tar.bz2"
+    SHA1
+    b6b284acde2ad7ed49b44e856955d7b1ea4e9459
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
     "1.65.1"
     URL
     "${_hunter_boost_base_url}/1.65.1/source/boost_1_65_1.tar.bz2"
