@@ -20,28 +20,6 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
-    "1.67.0"
-    URL
-    "${_hunter_boost_base_url}/1.67.0/source/boost_1_67_0.tar.bz2"
-    SHA1
-    694ae3f4f899d1a80eb7a3b31b33be73c423c1ae
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    Boost
-    VERSION
-    "1.66.0"
-    URL
-    "${_hunter_boost_base_url}/1.66.0/source/boost_1_66_0.tar.bz2"
-    SHA1
-    b6b284acde2ad7ed49b44e856955d7b1ea4e9459
-)
-
-hunter_add_version(
-    PACKAGE_NAME
-    Boost
-    VERSION
     "1.65.1"
     URL
     "${_hunter_boost_base_url}/1.65.1/source/boost_1_65_1.tar.bz2"
@@ -69,6 +47,50 @@ hunter_add_version(
     "${_hunter_boost_base_url}/1.66.0/source/boost_1_66_0.7z"
     SHA1
     075d0b43980614054b1f1bafd189f863bba6600e
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
+    "1.66.0-p0"
+    URL
+    "https://github.com/hunter-packages/boost/releases/download/v1.66.0-p0/hunter-1.66.0.7z"
+    SHA1
+    8c9829ce5e8f0b2b582f8ee1a6103c037a154aa3
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
+    "1.67.0"
+    URL
+    "${_hunter_boost_base_url}/1.67.0/source/boost_1_67_0.7z"
+    SHA1
+    64c278c23defe155e630a307ae2c0615348b14b3
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
+    "1.67.0-p0"
+    URL
+    "https://github.com/hunter-packages/boost/archive/v1.67.0-p0.tar.gz"
+    SHA1
+    e56a5fbafa31683047f92850e05735dfcde084aa
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
+    "1.67.0-p1"
+    URL
+    "https://github.com/hunter-packages/boost/releases/download/v1.67.0-p1/hunter-1.67.0.7z"
+    SHA1
+    26fcf19a79d013a318562435cef2829ea6bf29a4
 )
 
 # up until 1.63 sourcefourge was used
@@ -323,4 +345,4 @@ endif()
 
 hunter_pick_scheme(DEFAULT url_sha1_boost)
 hunter_cacheable(Boost)
-hunter_download(PACKAGE_NAME Boost PACKAGE_INTERNAL_DEPS_ID "25")
+hunter_download(PACKAGE_NAME Boost PACKAGE_INTERNAL_DEPS_ID "28")
